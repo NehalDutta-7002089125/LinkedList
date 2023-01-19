@@ -45,6 +45,24 @@ namespace Llist
              node.next= temp.next;
             temp.next= node;
         }
+        public void remove(int index)
+        {
+            if(index == 0)
+            {
+                head= head.next;
+            }
+            else
+            {
+                Node temp = head;
+                Node n1 = null;
+                for (int i = 0; i < index - 1; i++)
+                {
+                    temp = temp.next;
+                }
+                n1= temp.next;
+                temp.next= n1.next;
+            }
+        }
         public void show()
         {
             Node temp= head;
