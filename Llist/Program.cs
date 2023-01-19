@@ -8,8 +8,9 @@ namespace Llist
         {
             Linkedlist a = new Linkedlist();
             a.add(70);
-            a.AddFirst(30);
-            a.AddFirst(56);
+            
+            a.add(56);
+            a.AddBTW(1, 30);
             a.show();
         }
     }
