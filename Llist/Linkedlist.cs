@@ -26,6 +26,13 @@ namespace Llist
                 temp.next = node;
             }
         }
+        public void AddFirst(int data)
+        {
+            Node node = new Node();
+            node.data = data;
+            node.next = head;
+            head= node;
+        }
         public void show()
         {
             Node temp= head;
