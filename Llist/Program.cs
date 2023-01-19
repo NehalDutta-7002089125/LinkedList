@@ -11,7 +11,7 @@ namespace Llist
             
             a.add(70);
             a.AddBTW(1, 30);
-            a.remove(0);
+            a.remove(2);
             a.show();
         }
     }
